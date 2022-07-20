@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Hello!</title>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-
     <body>
-        <h1>Hello World!</h1>
-        <p>This is a simple paragraph.</p>
-    </body>
+        <div class="view" id="view" style="display: none;">
+            <img class="output" id="output" width="auto" height="auto">
+        </div>
+        <script>
+            const view = document.querySelector("#view");
+            hash = location.hash.slice(1);
+            hash = decodeURIComponent(hash);
+            output.src = hash;
+            view.style.display = 'flex';
+            document.body.style.background = '#222222';
+	</script>
+    
 
-</html>
+</body></html>
