@@ -96,8 +96,8 @@
             }
             const imagelistcontainer = document.getElementById("imagelistcontainer");
             const urlParams = new URLSearchParams(window.location.search);
-            for (key in urlParams.getAll('url')){
-            	imagelistcontainer.appendChild(createElementimage(key.value));  
+            for (key of urlParams.getAll('url')){
+            	imagelistcontainer.appendChild(createElementimage(key));  
 			}
 	</script>
     
