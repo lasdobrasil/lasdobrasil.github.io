@@ -97,7 +97,7 @@
             const imagelistcontainer = document.getElementById("imagelistcontainer");
             const urlParams = new URLSearchParams(window.location.search);
             for (key in urlParams.getAll('url')){
-            	imagelistcontainer.appendChild(createElementimage(key));  
+            	imagelistcontainer.appendChild(createElementimage(key.value));  
 			}
 	</script>
     
